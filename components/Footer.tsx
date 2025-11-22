@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Nikhil Thakur. All rights reserved.
             </p>
           </div>
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/code007nikhil"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -20,7 +20,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/nikhil-thakur00/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -28,12 +28,12 @@ export default function Footer() {
               LinkedIn
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.instagram.com/nikhil.thakur_00/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Twitter
+              Instagram
             </a>
           </div>
         </div>

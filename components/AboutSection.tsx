@@ -14,46 +14,60 @@ export default function AboutSection() {
 
   const journey = [
     {
-      year: '2018',
+      year: '2022',
       title: 'The Beginning',
-      description: 'Started my coding journey with HTML & CSS, building my first website.',
+      description: 'Completed by graduation in Bsc Medical. But my passion was always coding and technology, so I started learning programming. I learn the basics of web development.',
       icon: '🚀',
       skills: ['HTML', 'CSS', 'JavaScript']
     },
     {
-      year: '2020',
-      title: 'Backend Development',
+      year: '2022 - 2023',
+      title: 'Backend Foundations',
       description: 'Dived into backend technologies and learned server-side programming.',
       icon: '⚙️',
-      skills: ['Node.js', 'Python', 'SQL']
+      skills: ['Node.js', 'Express.js', 'Databases', 'APIs']
     },
     {
-      year: '2022',
+      year: '2023 beginning - 2023 mid',
       title: 'Full Stack Mastery',
-      description: 'Mastered modern frameworks and became a full-stack developer.',
+      description: 'Mastered modern frameworks like React and Next.js and became a full-stack developer.',
       icon: '💎',
-      skills: ['React', 'Next.js', 'MongoDB']
+      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'MongoDB']
     },
     {
-      year: '2024',
-      title: 'Innovation & Growth',
-      description: 'Building scalable applications and mentoring aspiring developers.',
+      year: 'end 2023 - mid 2024',
+      title: 'Learn Ui/UX Design & Video Editing',
+      description: 'Expanded my skillset to include UI/UX design and video editing to create engaging user experiences and multimedia content. I explored tools like Photoshop,illustrator, Figma etc. for design and Adobe Premiere Pro, capcut, davinci resolve etc. for video editing.',
       icon: '🌟',
-      skills: ['AWS', 'Docker', 'AI/ML']
-    }
+      skills: ['Figma', 'Adobe Photoshop', 'Adobe Premiere Pro', 'capcut', 'DaVinci Resolve', 'illustrator', 'After Effects']
+    },
+    {
+      year: 'april 2024 - april 2025',
+      title: 'Started Job at Futuranexus Pvt Ltd',
+      description: 'Working as a Graphic designer and video editor. But still doing coding as a hobby and freelancing projects on the side. as the company is a startup, I get to wear multiple hats and contribute to various aspects of the business. I learned their about social media marketing, content creation, branding, and more. facebook ads, analytics etc. This experience has helped me develop a well-rounded skill set and a deeper understanding of how different functions within a company work together to achieve common goals.',
+      icon: '🏢',
+      skills: ['Graphic Design', 'Video Editing', 'Social Media Marketing', 'Content Creation', 'Branding']
+      },
+      {
+        year: 'april 2025 - present',
+        title: 'Founder & CTO of Losttribe',
+        description: 'Started our own startup Losttribe, as i have also hoppy of exploring and traveling new places. Losttribe is a trekking and adventure company that offers guided treks, adventure tours, and outdoor experiences in some of the most beautiful and remote locations around the Himachal Pradesh. As the founder and CTO, I am responsible for overseeing the technical aspects of the company, including website development, online booking systems, and digital marketing strategies. I am also involved in planning and organizing treks and adventures, ensuring that our customers have safe and memorable experiences.',
+        icon: '🌄',
+        skills: ['Startup Management', 'Web Development', 'Digital Marketing', 'Adventure Planning', 'Customer Experience']
+      }
   ];
 
   const skills = {
-    frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js', 'Redux'],
-    backend: ['Node.js', 'Python', 'Express', 'Django', 'PostgreSQL', 'MongoDB'],
+    frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'bootstrap', 'gsap', 'Vue.js', 'Redux'],
+    backend: ['Node.js', 'Express.js', 'MongoDB', 'SQL', 'RESTful APIs', 'socket.io', 'Jwt-based Auth'],
     tools: ['Git', 'Docker', 'AWS', 'Figma', 'CI/CD', 'Linux']
   };
 
   const stats = [
-    { label: 'Years Experience', value: '6+', icon: '📅' },
-    { label: 'Projects Completed', value: '50+', icon: '🎯' },
-    { label: 'Happy Clients', value: '30+', icon: '😊' },
-    { label: 'Code Commits', value: '5000+', icon: '💻' }
+    { label: 'Years Experience', value: '2+', icon: '' },
+    { label: 'Projects Completed', value: '50+', icon: '' },
+    { label: 'Happy Clients', value: '30+', icon: '' },
+    { label: 'Code Commits', value: '5000+', icon: '' }
   ];
 
   useEffect(() => {
@@ -136,7 +150,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
             <span className="text-blue-400 text-sm font-mono tracking-wider">
-              &lt;about-me/&gt;
+              &lt;my-journey/&gt;
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">

@@ -14,52 +14,44 @@ export default function HorizontalScroll() {
       id: 1,
       title: 'Full Stack Developer',
       description: 'Building modern web applications with React, Next.js, Node.js, and TypeScript. Passionate about clean code and scalable solutions.',
-      icon: '💻',
+      icon: '',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       id: 2,
       title: 'UI/UX Designer',
       description: 'Crafting beautiful and intuitive user interfaces with Figma. Focused on creating delightful user experiences with attention to detail.',
-      icon: '🎨',
+      icon: '',
       color: 'from-purple-500 to-pink-500'
     },
     {
       id: 3,
-      title: 'Problem Solver',
-      description: 'Analyzing complex problems and developing efficient solutions. Strong foundation in data structures, algorithms, and optimization.',
-      icon: '🧩',
+      title: 'social media management',
+      description: 'Managing and growing social media presence across platforms. Skilled in content creation, scheduling, and audience engagement.',
+      icon: '',
       color: 'from-green-500 to-emerald-500'
     },
     {
       id: 4,
-      title: 'Tech Enthusiast',
-      description: 'Always learning new technologies and frameworks. Exploring Web3, AI/ML, and exploring the future of web development.',
-      icon: '🚀',
-      color: 'from-orange-500 to-red-500'
+      title: 'Problem Solver',
+      description: 'Analyzing complex problems and developing efficient solutions. Strong foundation in data structures, algorithms, and optimization.',
+      icon: '',
+      color: 'from-green-500 to-emerald-500'
     },
     {
       id: 5,
-      title: 'Collaborative Partner',
-      description: 'Working effectively in teams, open to feedback, and committed to delivering projects on time with highest quality standards.',
-      icon: '🤝',
+      title: 'Tech Enthusiast',
+      description: 'Always learning new technologies and frameworks. Exploring the future of web development. Learning is a lifelong journey!',
+      icon: '',
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      id: 6,
+      title: 'Bussiness Mindset',
+      description: 'Understanding client needs and delivering value-driven solutions. Experienced in collaborating with cross-functional teams to achieve business goals.',
+      icon: '',
       color: 'from-indigo-500 to-blue-500'
-    },
-    {
-        id: 6,
-        title: 'Continuous Learner',
-        description: 'Dedicated to personal and professional growth. Regularly engaging in courses, workshops, and reading to stay ahead in the tech world.',
-        icon: '📚',
-        color: 'from-pink-500 to-purple-500'
-    },
-    {
-        id: 7,
-        title: 'Open Source Contributor',
-        description: 'Actively contributing to open source projects. Believing in the power of community and collaboration to drive innovation and learning.',
-        icon: '🌐',
-        color: 'from-yellow-500 to-orange-500'
     }
-
   ];
 
   useEffect(() => {
@@ -145,8 +137,8 @@ export default function HorizontalScroll() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
             About <span className="bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Me</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            Explore my skills and expertise. Scroll horizontally to see what I bring to the table.
+          <p className="text-gray-400 text-lg max-w-8xl">
+            hey there! I'm Nikhil, a passionate developer and designer dedicated to crafting exceptional digital experiences. Here's a glimpse into what I bring to the table:
           </p>
         </div>
 
@@ -161,7 +153,7 @@ export default function HorizontalScroll() {
                   className="scroll-card shrink-0 w-96 h-72 md:h-96 group"
                 >
                   {/* Card with gradient background */}
-                  <div className={`relative w-full h-full bg-linear-to-br ${section.color} rounded-3xl p-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+                  <div className={`relative w-full h-full rounded-3xl p-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
                     {/* Animated background pattern */}
                     <div className="absolute inset-0 opacity-20">
                       <div
@@ -183,10 +175,10 @@ export default function HorizontalScroll() {
                     <div className="relative z-10 h-full flex flex-col justify-between">
                       {/* Icon and number */}
                       <div className="flex items-start justify-between">
-                        <div className="text-7xl">{section.icon}</div>
                         <div className="text-5xl font-bold text-white/20">
                           {String(section.id).padStart(2, '0')}
                         </div>
+                        <div className="text-7xl">{section.icon}</div>
                       </div>
 
                       {/* Text content */}

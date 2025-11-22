@@ -3,14 +3,20 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 
+interface FlipState {
+  isFlipped: boolean;
+}
+
 export default function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isFlipped, setIsFlipped] = useState(false);
   const heroRef = useRef(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const ringsRef = useRef<HTMLDivElement>(null);
+  const imageFrameRef = useRef<HTMLDivElement>(null); 
 
   useEffect(() => {
     // GSAP Animations on mount 
@@ -190,13 +196,43 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-50 animate-pulse"></div>
 
             {/* Image Frame */}
-            <div className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-blue-500/50 shadow-2xl shadow-blue-500/50">
-              <Image
-                src="/images/nikhil.jpg"
-                alt="Nikhil Thakur"
-                layout="fill"
-                objectFit="cover"
-              />
+            <div
+              ref={imageFrameRef}
+              className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-blue-500/50 shadow-2xl shadow-blue-500/50 cursor-pointer"
+              onMouseEnter={() => setIsFlipped(true)}
+              onMouseLeave={() => setIsFlipped(false)}
+            >
+              {/* Front Image */}
+              <div
+                className="absolute inset-0 w-full h-full rounded-3xl overflow-hidden"
+                style={{
+                  opacity: isFlipped ? 0 : 0.5,
+                  transition: 'opacity 0.6s ease-in-out',
+                }}
+              >
+                <Image
+                  src="/images/hacker.jpeg"
+                  alt="Nikhil Thakur"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+
+              {/* Back Image */}
+              <div
+                className="absolute inset-0 w-full h-full rounded-3xl overflow-hidden"
+                style={{
+                  opacity: isFlipped ? 0.5 : 0,
+                  transition: 'opacity 0.6s ease-in-out',
+                }}
+              >
+                <Image
+                  src="/images/nikhil.png"
+                  alt="Nikhil Thakur - Back"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
 
             {/* Corner Accents */}
@@ -236,6 +272,10 @@ export default function HeroSection() {
         .animate-gradient {
           background-size: 200% 200%;
           animation: gradient 3s ease infinite;
+        }
+
+        [style*="perspective"] {
+          perspective: 1000px;
         }
       `}</style>
     </section>
