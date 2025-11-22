@@ -51,7 +51,7 @@ export default function AboutSection() {
       {
         year: 'april 2025 - present',
         title: 'Founder & CTO of Losttribe',
-        description: 'Started our own startup Losttribe, as i have also hoppy of exploring and traveling new places. Losttribe is a trekking and adventure company that offers guided treks, adventure tours, and outdoor experiences in some of the most beautiful and remote locations around the Himachal Pradesh. As the founder and CTO, I am responsible for overseeing the technical aspects of the company, including website development, online booking systems, and digital marketing strategies. I am also involved in planning and organizing treks and adventures, ensuring that our customers have safe and memorable experiences.',
+        description: 'Started our own startup Losttribe, as i have also hobby of exploring and traveling new places. Losttribe is a trekking and adventure company that offers guided treks, adventure tours, and outdoor experiences in some of the most beautiful and remote locations around the Himachal Pradesh. As the founder and CTO, I am responsible for overseeing the technical aspects of the company, including website development, online booking systems, and digital marketing strategies. I am also involved in planning and organizing treks and adventures, ensuring that our customers have safe and memorable experiences.',
         icon: '🌄',
         skills: ['Startup Management', 'Web Development', 'Digital Marketing', 'Adventure Planning', 'Customer Experience']
       }

@@ -42,9 +42,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-32 overflow-hidden">
+    <section id="contact" className="relative py-32 overflow-hidden bg-slate-900">
       {/* Space background with gradient */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-linear-to-b from-black via-slate-800 to-black">
         {/* Animated stars */}
         {stars.map((star) => (
           <div
