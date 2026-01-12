@@ -1,0 +1,164 @@
+ const projects = [
+    {
+      id: 1,
+      title: 'Losttribe Website',
+      description: 'built a modern, responsive website for Losttribe, featuring trekking and adventure tours with seamless booking and stunning visuals.',
+      technologies: ['react.js', 'tailwind css', 'framer motion', 'node.js', 'express.js'],
+      link: 'https://www.losttribe.in/',
+      github: '',
+      image: '/images/losttribe.png',
+      color: 'from-green-500 to-emerald-500'
+    },
+    {
+      id: 2,
+      title: 'Mock Test Website',
+      description: 'website for students to practice mock tests, they can create test in excel sheet and by using sheet url tests can be taken. ',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/Mock-test/',
+      github: 'https://github.com/code007nikhil/Mock-test',
+      image: '/images/mocktest.png',
+      color: 'from-green-500 to-emerald-500'
+    },
+    {
+      id: 3,
+      title: 'Dairy Brand Website',
+      description: 'A modern and responsive website for a dairy brand, showcasing products, services, and customer testimonials.',
+      technologies: ['Next.js', 'Tailwind CSS', 'Node.js'],
+      link: 'https://client-nine-mu-12.vercel.app/home',
+      github: 'https://github.com/code007nikhil/client',
+      image: '/images/himalayanbliss.png',
+      color: 'from-yellow-400 to-yellow-600'
+    },
+    {
+      id: 4,
+      title: 'hotel whatsaap booking website',
+      description: 'A hotel booking website that allows users to book rooms via WhatsApp for a seamless experience.',
+      technologies: ['React.js', 'Tailwind CSS', 'TypeScript'],
+      link: 'https://dream-destination-camps.vercel.app/',
+      github: 'https://github.com/code007nikhil/Dream-Destination-Camps',
+      image: '/images/dreamdestination.png',
+      color: 'from-pink-500 to-red-500'
+    },
+    {
+      id: 5,
+      title: 'Weather webapp',
+      description: 'A web application that provides real-time weather updates and forecasts for any location worldwide.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/weather-app/',
+      github: 'https://github.com/code007nikhil/weather-app',
+      image: '/images/weatherapp.png',
+      color: 'from-blue-400 to-indigo-500'
+    },
+    {
+      id: 6,
+      title: 'Ranjom Joke Generator',
+      description: 'An entertaining web app that delivers random jokes to users, providing a quick laugh with each visit.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/random-joke/',
+      github: 'https://github.com/code007nikhil/random-joke',
+      image: '/images/randomjoke.png',
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
+      id: 7,
+      title: 'image slider',
+      description: 'A sleek and interactive image slider that allows users to navigate through a collection of images with smooth transitions.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/image-slider/',
+      github: 'https://github.com/code007nikhil/image-slider',
+      image: '/images/imageslider.png',
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
+      id: 8,
+      title: 'Loader Animations',
+      description: 'A visually appealing loader animations created using HTML and CSS to enhance user experience during content loading.',
+      technologies: ['html', 'css'],
+      link: 'https://code007nikhil.github.io/loader/',
+      github: 'https://github.com/code007nikhil/loader',
+      image: '/images/loader.png',
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
+      id: 9,
+      title: 'Stop Watch webapp',
+      description: 'A functional stopwatch web application that allows users to track elapsed time with start, stop, and reset features.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/stop-watch/',
+      github: 'https://github.com/code007nikhil/stop-watch',
+      image: '/images/stopwatch.png',
+      color: 'from-blue-400 to-indigo-500'
+    },
+    {
+      id: 10,
+      title: 'Guess the number game',
+      description: 'An interactive number guessing game where users attempt to guess a randomly generated number within a specified range.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/guess-the-number/',
+      github: 'https://github.com/code007nikhil/guess-the-number',
+      image: '/images/guessthenumber.png',
+      color: 'from-green-400 to-green-600'
+    },
+    {
+      id: 11,
+      title: 'counter webapp',
+      description: 'A simple counter web application that allows users to increment, decrement, and reset a numerical value.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/counter/',
+      github: 'https://github.com/code007nikhil/counter',
+      image: '/images/counter.png',
+      color: 'from-yellow-400 to-yellow-600'
+    },
+    {
+      id: 12,
+      title: 'Review slider',
+      description: 'An engaging review slider that showcases customer testimonials with smooth transitions and navigation controls.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/Riview-slider/',
+      github: 'https://github.com/code007nikhil/Review-slider',
+      image: '/images/reviewslider.png',
+      color: 'from-pink-500 to-purple-500'
+    },
+    {
+      id: 13,
+      title: 'Date and Time webapp',
+      description: 'A web application that displays the current date and time, updating in real-time for user convenience.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/date-and-time/',
+      github: 'https://github.com/code007nikhil/date-and-time',
+      image: '/images/dateandtime.png',
+      color: 'from-indigo-400 to-blue-600'
+    },
+    {
+      id: 14,
+      title: 'Colour find Game',
+      description: 'An interactive color finding game that challenges users to identify and select specific colors from a palette.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/colour-find/',
+      github: 'https://github.com/code007nikhil/colour-find',
+      image: '/images/colourfind.png',
+      color: 'from-red-400 to-yellow-600'
+    },
+    {
+      id: 15,
+      title: 'Mind Reader fun Game',
+      description: 'A fun mind reader game that attempts to guess the number a user is thinking of through a series of questions.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/mind-read/',
+      github: 'https://github.com/code007nikhil/mind-read',
+      image: '/images/mindread.png',
+      color: 'from-purple-400 to-pink-600'
+    },
+    {
+      id: 16,
+      title: 'Chess Timer',
+      description: 'A chess timer application that allows players to track their time during a chess game with start, pause, and reset features.',
+      technologies: ['html', 'css', 'javascript'],
+      link: 'https://code007nikhil.github.io/chess-timer/',
+      github: 'https://github.com/code007nikhil/chess-timer',
+      image: '/images/chesstimer.png',
+      color: 'from-indigo-400 to-blue-600'
+    }
+
+
+  ];

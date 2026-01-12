@@ -26,6 +26,13 @@ export default function HorizontalScroll() {
     },
     {
       id: 3,
+      title: 'Video Editor',
+      description: 'Creating engaging video content using Adobe Premiere Pro and After Effects. Skilled in storytelling, transitions, and visual effects.',
+      icon: '',
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
+      id: 3,
       title: 'social media management',
       description: 'Managing and growing social media presence across platforms. Skilled in content creation, scheduling, and audience engagement.',
       icon: '',
@@ -44,13 +51,6 @@ export default function HorizontalScroll() {
       description: 'Always learning new technologies and frameworks. Exploring the future of web development. Learning is a lifelong journey!',
       icon: '',
       color: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 6,
-      title: 'Bussiness Mindset',
-      description: 'Understanding client needs and delivering value-driven solutions. Experienced in collaborating with cross-functional teams to achieve business goals.',
-      icon: '',
-      color: 'from-indigo-500 to-blue-500'
     }
   ];
 
