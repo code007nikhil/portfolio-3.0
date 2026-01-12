@@ -58,9 +58,12 @@ export default function AboutSection() {
   ];
 
   const skills = {
+    videoediting: ['Adobe Premiere Pro', 'DaVinci Resolve', 'capcut', 'After Effects'],
+    design: ['Figma', 'Adobe Photoshop', 'Adobe Illustrator', 'Canva'],
     frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'bootstrap', 'gsap', 'Vue.js', 'Redux'],
     backend: ['Node.js', 'Express.js', 'MongoDB', 'SQL', 'RESTful APIs', 'socket.io', 'Jwt-based Auth'],
-    tools: ['Git', 'Docker', 'AWS', 'Figma', 'CI/CD', 'Linux']
+    tools: ['Git', 'Docker', 'AWS', 'Figma', 'CI/CD', 'Linux'],
+    Aitools: ['ChatGPT', 'Gemini', 'RunwayML', 'Claude', 'Midjourney']
   };
 
   const stats = [

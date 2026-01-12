@@ -96,13 +96,13 @@ export default function FuturisticSection() {
           {/* Paragraph Text */}
           <div className="space-y-4">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I specialize in building cutting-edge web applications that blend stunning aesthetics with powerful functionality. Every project is an opportunity to push boundaries and create something extraordinary.
+              I specialize in building cutting-edge web applications, creating compelling video content, and designing stunning graphics that captivate audiences. Every project is an opportunity to push boundaries and create something extraordinary across multiple mediums.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              With a focus on modern design principles and scalable architecture, I deliver solutions that not only look beautiful but perform flawlessly. From concept to deployment, I bring ideas to life with precision and creativity.
+              From cinematic video editing and motion graphics to brand identity design and scalable web architecture, I deliver solutions that not only look beautiful but perform flawlessly. With a focus on modern design principles and visual storytelling, I bring ideas to life with precision and creativity.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Whether it's a sleek landing page, a complex web application, or an immersive user experience, I'm dedicated to crafting digital products that leave a lasting impression and drive real results.
+              Whether it's a promotional video, brand identity package, sleek landing page, or complex web application, I'm dedicated to crafting digital experiences that leave a lasting impression and drive real results across all platforms.
             </p>
           </div>
         </div>

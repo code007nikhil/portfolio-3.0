@@ -114,7 +114,7 @@ export default function HeroSection() {
         <div className="text-left space-y-6">
           <div className="inline-block">
             <span className="text-blue-400 text-sm font-mono tracking-wider">
-              &lt;developer/&gt;
+              &lt;Welcome to my space/&gt;
             </span>
           </div>
           <div ref={titleRef}>
@@ -129,13 +129,13 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 font-light">
-              Bussiness Enthusiast | Full Stack Web Developer | UI/UX Designer | Social Media Marketer
+              Full Stack Web Developer | Video Editor / UI/UX Designer | Social Media Marketer | Bussiness Enthusiast
             </p>
           </div>
 
 
           <p className="text-lg text-gray-400 leading-relaxed max-w-xl" ref={descRef}>
-            Hi! I’m a web developer, UI/UX designer, and social media marketer with a passion for helping businesses grow. I focus on simple, clean, and effective digital solutions that people enjoy using.
+            Passion for helping businesses grow. I focus on simple, clean, and effective digital solutions that people enjoy using.
           </p>
 
           <div ref={buttonsRef} className="flex flex-wrap gap-4 pt-4">
